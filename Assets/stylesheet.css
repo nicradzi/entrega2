@@ -1,10 +1,9 @@
-/*VER COMO IMPORTAR LAS GOOGLE FONTS*/
 
 :root {
     /*background colors*/
     --background: #02050e;  
-    --primary: #1e50ff;
-    --secondary: #202d37;
+    --primary: #936639;
+    --secondary: #a68a64;
 }
 
 * {
@@ -13,11 +12,11 @@
     box-sizing: border-box;
     text-decoration: 0;
     list-style-type: none;
-    font-family: sans-serif;
+    font-family: 'Heebo', sans-serif;
 }
 
 header {
-    background: var(--secondary);
+    background: #936639;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -29,7 +28,8 @@ header {
 }
 
 .logo  {
-    height: 40%;
+    height: 90%;
+    color: white;
 }
 
 .navbar,
@@ -48,12 +48,12 @@ header {
 }
 
 .navbar-list a {
-    color: grey;
-    font-size: 14px;
+    color: black;
+    font-size: 17px;
 }
 
 .navbar-list li:first-child > a {
-    color: whitesmoke;
+    color: #a68a64;
     font-weight: 600;
 }
 
@@ -62,15 +62,15 @@ header {
     padding: 12px 18px;
     margin-top: 3px;
     border-radius: 10px;
-    height: 36px;
+    height: 45px;
     font-weight: 600;
     cursor: pointer;
-    color: whitesmoke;
+    color: white;
 }
 
 /* MAIN */
 main {
-    background-color: var(--background);
+    background-color: #582f0e;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,38 +79,38 @@ main {
     color: white;
 }
 
-#hero {
+#general {
     margin-top: 65px;
-    padding: 70px 0;
+    padding: 70px 20px;
     max-width: 1200px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 }
-.hero-info {
+.general-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
     width: 50%;
 }
-.hero-info h1 {
+.general-info h1 {
     font-size: 48px;
     width: 80px;
     min-width: 500px;
     font-weight: 800;
-    color: grey;
+    color: #a68a64;
 }
 
-.hero-info p {
+.general-info p {
     font-size: 14px;
     width: 70%;
     color: whitesmoke;
 }
-.hero-info p > span {
+.general-info p > span {
     font-weight: 800;
 }
 
-.hero-info a {
+.general-info a {
     color: whitesmoke;
     background-color: var(--primary);
     width: 120px;
@@ -119,8 +119,8 @@ main {
     font-size: 14px;
     text-align: center;
 }
-.hero-card {
-    width: 300px;
+.general-card {
+    width: 50%;
     background: var(--secondary);
     padding: 20px;  
     border-radius: 15px;
@@ -128,44 +128,4 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-}
-.hero-card-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.hero-card-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px;
-}
-
-.hero-card-top h3 {
-    font-weight: 600;
-    font-size: 16px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.hero-card-top span {
-    background-color: var(--primary);
-    text-align: center;
-    width: 50px;
-    padding: 3px 0px 3px 0px;
-    font-size: 14px;
-    border-radius: 10px;
-}
-
-.hero-card-buttom {
-    display: flex;
-    justify-content: space-between;
-}
-.hero-card-creator {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    justify-content: center;
-    size: 10%;
 }
