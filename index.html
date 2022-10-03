@@ -1,49 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magnolia Landing Page</title>
-    <link rel="stylesheet" href="/stylesheet.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b7b4ab79cd.js"
+      crossorigin="anonymous"
+    ></script>
+    referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    
     <header>
-        <img src="/Assets/magnolialogo.png" alt="logo" class="logo">
+      <div class="container">
+        <img src="/Assets/magnolialogo.png" alt="logo" class="logo" />
         <nav class="navbar">
-            <ul class="navbar-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tortas</a></li>
-                <li><a href="#">Caterings</a></li>
-                <li><a href="#">Viandas</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <img src="/Assets/cart.png" alt="cart" class="cart-icon">
+          <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+          <input type="checkbox" id="toggle-menu" />
+          <ul class="navbar-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tortas</a></li>
+            <li><a href="#">Caterings</a></li>
+            <li><a href="#">Viandas</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+          <img src="/Assets/cart.png" alt="cart" class="cart-icon" />
         </nav>
+      </div>
     </header>
     <main>
-        <section id="general">
-            <div class="general-info">
-                <h1>MAGNOLIA</h1>
-                <p>Nuestro menú celebra la simplicidad de los alimentos frescos y nutritivos. Desde la mañana hasta la noche, siempre hay un nuevo favorito para descubrir.
-                    <span>Somos Magnolia</span>
-                </p>
-                <div class="botones">
-                    <a href="#">PEDÍ VIANDAS</a>
-                    <a href="#">PEDÍ TORTAS</a>
-            </div>
-            </div>
-            <div class="general-card">
-                <img src="/Assets/viandas-muke.jpg" alt="vianda">
-            </div>
-        </section>
-        <span class="divider"></span>
-        <section id="adicional">
-            <div class="adicional-info">Durante más de 5 años, Magnolia Bakery ha estado elaborando los productos horneados favoritos a la antigua usanza: desde cero, en lotes pequeños y utilizando los mejores ingredientes.</div>
-        </section>
+      <section id="general">
+        <div class="general-info">
+          <h1>MAGNOLIA</h1>
+          <p>
+            Nuestro menú celebra la simplicidad de los alimentos frescos y
+            nutritivos. Desde la mañana hasta la noche, siempre hay un nuevo
+            favorito para descubrir.
+            <span>Somos Magnolia</span>
+          </p>
+          <div class="botones">
+            <a href="#">PEDÍ VIANDAS</a>
+            <a href="#">PEDÍ TORTAS</a>
+          </div>
+        </div>
+        <div class="general-card">
+          <img src="/Assets/viandas-muke.jpg" alt="vianda" />
+        </div>
+      </section>
+      <span class="divider"></span>
+
+      <section id="adicional">
+        <div class="adicional-info">
+          Durante más de 5 años, Magnolia Bakery ha estado elaborando los
+          productos horneados favoritos a la antigua usanza: desde cero, en
+          lotes pequeños y utilizando los mejores ingredientes.
+        </div>
+      </section>
     </main>
-</body>
+
+    <section id="nuestras-ofertas">
+      <div class="container">
+        <h2>MÁS INFORMACIÓN</h2>
+        <div class="programas">
+          <div class="carta">
+            <h3>MENÚ</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+              explicabo ad, ullam nemo tempora eveniet suscipit tenetur eum
+              dicta sint possimus sapiente quos accusantium fugit? Non dicta
+              suscipit similique cum?.
+            </p>
+          </div>
+          <div class="carta">
+            <h3>ENVÍOS</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+              explicabo ad, ullam nemo tempora eveniet suscipit tenetur eum
+              dicta sint possimus sapiente quos accusantium fugit? Non dicta
+              suscipit similique cum?.
+            </p>
+          </div>
+          <div class="carta">
+            <h3>PAGOS</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+              explicabo ad, ullam nemo tempora eveniet suscipit tenetur eum
+              dicta sint possimus sapiente quos accusantium fugit? Non dicta
+              suscipit similique cum?.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container">
+        <h2>CONTACTANOS</h2>
+        <div class="contact-info">
+          <div class="contact-card"></div>
+          <i class="fa-regular fa-envelope"></i>
+          <p>magnolia@gmail.com</p>
+          <div class="contact-card"></div>
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Colon 1800</p>
+          <div class="contact-card"></div>
+          <i class="fa-solid fa-phone"></i>
+          <p class="info">3764-444444</p>
+        </div>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.285828217117!2d-55.89691808536559!3d-27.366787518884944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be3465e8d8dd%3A0x559213761c9a6a55!2sCol%C3%B3n%201800%2C%20N3301JFQ%20Posadas%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1664821753357!5m2!1ses-419!2sar"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Creado por Nico Radzichowski</h2>
+      </div>
+      <div class="redes-sociales">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+      <div class="contenedor">
+        <p class="copy">
+          © 2022 Nico Radzichowski / Todos los derechos reservados
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

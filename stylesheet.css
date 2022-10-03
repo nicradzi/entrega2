@@ -11,25 +11,35 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: 0;
-    list-style-type: none;
     font-family: 'Roboto', sans-serif;
+    list-style: none;
 }
 
-header {
+
+header .container{
     background-image: linear-gradient(to right top, #ffffff, #f1f1f1, #e2e2e2, #d4d4d4, #c6c6c6);
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 65px;
+    height: 10%;
     padding: 0px 30px 0px 30px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .logo  {
     height: 90%;
     color: white;
+}
+
+.navbar i {
+    font-size: 36px;
+    display: none;
+}
+#toggle-menu{ 
+    display: none;
 }
 
 .navbar,
@@ -63,7 +73,7 @@ header {
     padding: 8px 16px;
     margin-top: 3px;
     border-radius: 10px;
-    height: 40px;
+    height: 3em;
     cursor: pointer;
 }
 
@@ -75,34 +85,31 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    /*width: 100%;
+    height: 100%;*/
 }
 
 #general {
-    margin-top: 65px;
-    padding: 70px 20px;
-    max-width: 1200px;
+    margin-top: 70px;
+    padding: 90px 20px;
     display: flex;
-    justify-content: center;
     align-items:center;
 }
 .general-info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    width: 50%;
+    gap: 0px;
+
 }
 .general-info h1 {
     font-size: 70px;
     width: 80px;
-    min-width: 500px;
     font-weight: 700;
     color: var(--primary);
 }
 
 .general-info p {
-    font-size: 16px;
+    font-size: 1.5em;
     width: 70%;
     color: black;
     font-weight: 500;
@@ -115,30 +122,29 @@ main {
 .general-info a {
     color: var(--secondary);
     background-color: var(--primary);
-    width: 120px;
-    padding: 8px 0px;
-    border-radius: 10px;
-    font-size: 14px;
+    padding: 8px 50px;
+    border-radius: 15px;
+    font-size: 1rem;
     text-align: center;
 }
 .botones{
     display: flex;
     text-align: center;
     justify-content: left;
-    border-radius: 10px;
+    border-radius: 15px;
     gap: 10px;
-    padding: 12px
+    padding: 30px 10px;
 }
 
 .general-card {
-    width: 50%;
     background-image: linear-gradient(to right top, #ffffff, #f1f1f1, #e2e2e2, #d4d4d4, #c6c6c6);
-    padding: 20px;  
+    padding: 30px;  
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
+    width: 40em;
 }
 #adicional {
     margin-top: 10px;
@@ -155,7 +161,98 @@ main {
     background-color: white;
 }
 .adicional-info {
-    width: 50%;
+    width: 90%;
     font-weight: 500;
-    text-align: justify;
+    text-align: center;
+    font-size: 22px;
 }
+
+/*SECTION CARDS */
+
+#nuestras-ofertas{
+    text-align: center;
+    display: flex;
+    background-color: var(--secondary);
+    padding: 30px;
+    
+}
+#nuestras-ofertas .container{
+    padding: 10px 12px
+}
+
+#nuestras-ofertas .container h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#nuestras-ofertas .programas{
+    margin-top: 0px;
+    display: flex;
+}
+
+.carta{
+    background-image: linear-gradient(to right top, #ffffff, #f1f1f1, #e2e2e2, #d4d4d4, #c6c6c6);
+}
+.carta:first-child{
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.carta:nth-child(2){
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.carta:nth-child(3){
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* CONTACTO */
+
+#contacto .container {
+    padding: 20px;
+    background-image: linear-gradient(to right top, #ffffff, #f1f1f1, #e2e2e2, #d4d4d4, #c6c6c6);
+    text-align: center;
+}
+#contacto .contact-info {
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.mapa{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+/* FOOTER */
+
+footer{
+padding: 20px;
+display: flex;
+align-items:center;
+justify-content: space-between;
+/*background-image: linear-gradient(to right top, #ffffff, #f1f1f1, #e2e2e2, #d4d4d4, #c6c6c6);*/
+background-color: #005A34;
+height: 100px;
+}
+
+footer .contenedor .titulo-seccion{
+    font-size: 16px;
+}
+
+.copy{
+    font-size: 10px;
+}
+.redes-sociales i{
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+/*
+PROFE, TODAVIA NO LA PUDE HACER RESPONSIVE, NO ME MATE POR FAVOR JAJA
+PARA LA PROXIMA ENTREGA VA A ESTAR TODO
+*/
