@@ -99,6 +99,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0px;
+    padding: 10px 60px;
 
 }
 .general-info h1 {
@@ -110,7 +111,6 @@ main {
 
 .general-info p {
     font-size: 1.5em;
-    width: 70%;
     color: black;
     font-weight: 500;
     text-align: justify;
@@ -144,7 +144,6 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 0px;
-    width: 40em;
 }
 #adicional {
     margin-top: 10px;
@@ -174,6 +173,7 @@ main {
     display: flex;
     background-color: var(--secondary);
     padding: 30px;
+    width: 100%;
     
 }
 #nuestras-ofertas .container{
