@@ -15,6 +15,7 @@
     list-style: none;
 }
 
+/* HEADER */
 
 header .container{
     background-image: linear-gradient(to right top, #ffffff, #f1f1f1, #e2e2e2, #d4d4d4, #c6c6c6);
@@ -144,6 +145,7 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 0px;
+
 }
 #adicional {
     margin-top: 10px;
@@ -166,46 +168,37 @@ main {
     font-size: 22px;
 }
 
-/*SECTION CARDS */
-
-#nuestras-ofertas{
+/*CARDS SECTION*/
+#cards-section{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    display: flex;
-    background-color: var(--secondary);
-    padding: 30px;
-    width: 100%;
-    
-}
-#nuestras-ofertas .container{
-    padding: 10px 12px
+    gap: 30px;
+    padding: 70px 0px;
+    width: 95%;
 }
 
-#nuestras-ofertas .container h2{
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-#nuestras-ofertas .programas{
-    margin-top: 0px;
+.cards-container{
     display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
-.carta{
-    background-image: linear-gradient(to right top, #ffffff, #f1f1f1, #e2e2e2, #d4d4d4, #c6c6c6);
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;
 }
-.carta:first-child{
-    padding: 50px;
-    margin: 20px;
-    border-radius: 15px;
+
+.card i{
+    font-size: 50px;
 }
-.carta:nth-child(2){
-    padding: 50px;
-    margin: 20px;
-    border-radius: 15px;
-}
-.carta:nth-child(3){
-    padding: 50px;
-    margin: 20px;
-    border-radius: 15px;
+
+.card h3{
+    font-size: 20px;
 }
 
 /* CONTACTO */
@@ -222,6 +215,13 @@ main {
     justify-content: center;
     flex-direction: row;
     gap: 20px;
+}
+
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;
 }
 
 .mapa{
@@ -252,7 +252,3 @@ footer .contenedor .titulo-seccion{
     padding: 0 10px;
 }
 
-/*
-PROFE, TODAVIA NO LA PUDE HACER RESPONSIVE, NO ME MATE POR FAVOR JAJA
-PARA LA PROXIMA ENTREGA VA A ESTAR TODO
-*/
