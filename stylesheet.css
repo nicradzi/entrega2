@@ -298,9 +298,15 @@ main {
     .cart-icon{
         display: none;
     }
-    .general-info{
+    .adicional-info {
+        margin-top: 0px;
         padding: 0px;
     }
+    .divider{
+        padding: 0px;
+        margin: 0px;
+    }
+
 }
 
 @media (max-width:576px) {
@@ -330,4 +336,13 @@ main {
     .general-info p{
         max-width: 100%;
     }
+    .adicional-info {
+        margin-top: 0px;
+        padding: 0px;
+    }
+    .divider{
+        padding: 0px;
+        margin: 0px;
+    }
+
 }
