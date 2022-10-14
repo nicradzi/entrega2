@@ -66,11 +66,12 @@ header .container-header{
 
 .cart-icon {
     border: 2px solid var(--primary);
-    padding: 8px 16px;
-    margin-top: 3px;
+    padding: 10px;
+    margin: 30px;
     border-radius: 10px;
-    height: 3em;
+    height: 60px;
     cursor: pointer;
+
 }
 
 /* MAIN */
@@ -213,10 +214,11 @@ main {
     margin-top: 20px;
     font-size: 20px;
     display: flex;
+    flex-direction: column;
+    align-items:center;
     justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 .contact-card{
     display: flex;
@@ -226,7 +228,7 @@ main {
 }
 
 .mapa{
-    padding: 50px;
+    padding: 10px;
     margin-top: 20px;
     margin-bottom: 50px;
     margin-left: 20px;
@@ -245,6 +247,32 @@ main {
 }
 
 @media (max-width:992px){
+    .navbar ul{
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: all 0.4s ease-out;
+    }
+    .navbar i{
+        display: block;
+    }
+    .cart-icon{
+        display: none;
+    }
+    #toggle-menu:checked + .navbar-list {
+        transform: translateX(0%);
+        transition: all 0.4s ease-in;
+    }
+    .general-info p{
+        max-width: 100%;
+    }
     .general-info{
         text-align: center;
         width: 90%;
@@ -266,6 +294,9 @@ main {
     }
     .adicional-info{
         font-size: 16px;
+    }
+    .cart-icon{
+        display: none;
     }
 }
 
